@@ -1,14 +1,10 @@
-import * as S from './styles'
 import logoImg from '../../assets/logo.svg'
+import * as S from './styles'
 
 import * as Dialog from '@radix-ui/react-dialog'
 import { NewTransactionModal } from '../NewTransactionModal'
-import { useContext } from 'react'
-import { TransactionsContext } from '../../contexts/TransactionsContext'
 
 export function Header() {
-  const { transactions } = useContext(TransactionsContext)
-
   return (
     <S.Container>
       <S.HeaderContent>
