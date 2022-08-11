@@ -15,6 +15,22 @@
       "category": "Alimentação",
       "price": 50,
       "createdAt": "2022-07-29T19:30:44.505Z"
+    },
+    {
+      "description": "Café",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-08-10T02:58:07.255Z",
+      "id": 3
+    },
+    {
+      "description": "Placa mãe",
+      "price": 850,
+      "category": "Eletrônicos",
+      "type": "outcome",
+      "createdAt": "2022-08-10T03:12:37.959Z",
+      "id": 4
     }
   ]
 }
