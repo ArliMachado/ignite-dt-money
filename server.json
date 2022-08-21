@@ -31,6 +31,14 @@
       "type": "outcome",
       "createdAt": "2022-08-10T03:12:37.959Z",
       "id": 4
+    },
+    {
+      "description": "Copo",
+      "price": 10,
+      "category": "Casa",
+      "type": "outcome",
+      "createdAt": "2022-08-16T00:57:57.066Z",
+      "id": 5
     }
   ]
 }

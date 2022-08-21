@@ -4,7 +4,7 @@ import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 import { Controller, useForm } from 'react-hook-form'
 import * as z from 'zod'
 
-import { useContext } from 'react'
+import { useContextSelector } from 'use-context-selector'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 import * as S from './styles'
 
@@ -24,7 +24,10 @@ interface INewTransactionModalProps {
 export function NewTransactionModal({
   onCloseModal,
 }: INewTransactionModalProps) {
-  const { createTransaction } = useContext(TransactionsContext)
+  const createTransaction = useContextSelector(
+    TransactionsContext,
+    (context) => context.createTransaction,
+  )
 
   const {
     control,

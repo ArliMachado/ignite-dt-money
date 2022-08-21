@@ -3,14 +3,14 @@ import * as S from './styles'
 
 import * as Dialog from '@radix-ui/react-dialog'
 import { NewTransactionModal } from '../NewTransactionModal'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 export function Header() {
   const [ModalOpen, setModalOpen] = useState(false)
 
-  function handleCloseNewTransactionModal() {
+  const handleCloseNewTransactionModal = useCallback(() => {
     setModalOpen(false)
-  }
+  }, [])
 
   return (
     <S.Container>
